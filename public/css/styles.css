@@ -1,0 +1,64 @@
+/* Global Dark Mode Styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  /* Header and Navigation */
+  header nav {
+    margin-bottom: 20px;
+  }
+  
+  header nav a {
+    color: #bb86fc;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: #f1f1f1;
+  }
+  
+  /* Links */
+  a {
+    color: #bb86fc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Elements */
+  form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 4px;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #bb86fc;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #121212;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #9b59b6;
+  }
+  

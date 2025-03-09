@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employer Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/post-job">Post a Job</a>
+    </nav>
+  </header>
+  <h1>Employer Dashboard</h1>
+  <ul>
+    <% jobs.forEach(function(job) { %>
+      <li>
+        <h2><a href="/job/<%= job.id %>"><%= job.title %></a></h2>
+        <p>
+          <strong>Company:</strong> <%= job.company %> | 
+          <strong>Location:</strong> <%= job.location %>
+        </p>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

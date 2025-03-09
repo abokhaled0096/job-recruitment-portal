@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= job.title %></title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/employer">Employer Dashboard</a>
+    </nav>
+  </header>
+  <h1><%= job.title %></h1>
+  <p><strong>Company:</strong> <%= job.company %></p>
+  <p><strong>Location:</strong> <%= job.location %></p>
+  <p><%= job.description %></p>
+
+  <h2>Apply for this job</h2>
+  <form action="/job/<%= job.id %>/apply" method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br>
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br>
+    <label>Resume (URL or text):</label><br>
+    <textarea name="resume" required></textarea><br>
+    <button type="submit">Apply</button>
+  </form>
+</body>
+</html>

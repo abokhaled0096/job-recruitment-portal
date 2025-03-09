@@ -1,0 +1,16 @@
+{
+    "name": "job-recruitment-portal",
+    "version": "1.0.0",
+    "description": "A job recruitment portal for employers and job seekers.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "sqlite3": "^5.1.2",
+      "body-parser": "^1.20.2",
+      "ejs": "^3.1.9"
+    }
+  }
+  
